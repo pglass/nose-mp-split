@@ -2,6 +2,9 @@
  nose-mp-split
 ===============
 
+.. image:: https://travis-ci.org/pglass/nose-mp-split.svg?branch=master
+    :target: https://travis-ci.org/pglass/nose-mp-split
+
 This plugin adds ``_multiprocess_can_split_ = True`` to each of your test
 classes and modules. That's all. This tells nose's multiprocess plugin that it
 doesn't need to run all of a class's tests in the same process. Nose will then
