@@ -13,7 +13,7 @@ When it's safe to use with your tests, this plugin is so cool!
 - There's no need to edit your tests to contain a nose-specific flag.
 - It evenly distributes test cases (rather than test classes) across processes.
   This utilizes worker process better to speed up test runs, especially if one
-  class takes much longer to run than the others.
+  class has many tests cases and takes much longer to run than the others.
 - It produces more responsive output. Since nose runs test *classes* in worker
   processes, it waits until each class has finished before printing the results
   for that class. This plugin ensures the results of a test case are printed
@@ -28,7 +28,7 @@ Quickstart
 
 .. code-block:: shell
 
-    $ pip intall nose-mp-split
+    $ pip install nose-mp-split
     $ nosetests --mp-split-all --processes=4 mytests/
 
 ``nose-mp-split`` has no effect when not running tests in multiple processes.
