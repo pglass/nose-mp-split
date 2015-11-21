@@ -15,7 +15,7 @@ setup_params = dict(
     package_data={'': ['LICENSE']},
     package_dir={'nosempsplit': 'nosempsplit'},
     include_package_data=True,
-    description='an improved multiprocess plugin for nose',
+    description='a plugin for nose to better utilize worker processes',
     long_description=long_description,
     install_requires=[
         'nose',
